@@ -14,11 +14,11 @@ emacs的语法很奇怪，我不想成为emacs的专家，所以根据google来�
 
 ### 不生成尾部带`~`的文件
 
-'''
+```
 (setq make-backup-files nil)
-'''
+```
 
-b### 设置emacs主题
+### 设置emacs主题
 
 先把存放主题文件的目录加载到emacs中
 

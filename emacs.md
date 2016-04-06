@@ -28,8 +28,43 @@ emacs的语法很奇怪，我不想成为emacs的专家，所以根据google来�
 ```
 把下载好的主题文件(以`.el`结尾的文件)放入该目录中。
 
+以monokai为例，设置emacs加载的默认主题。
+
 ```
 ;;设置默认主题
 (load-theme 'monokai t)
 
 ```
+
+### 设置字体
+
+emacs 字体分为好几个模块，有显示区域的字体，有菜单里的字体，还有buffer里的字体。
+
+以下内容是配置显示区域的字体，不涉及其它区域的字体。
+
+emacs要分别为中文和英文设置字体。
+
+#### 设置英文字体
+
+```
+(set-face-attribute 'default nil :font "DejaVu Sans Mono 11")
+```
+
+字体后带的数字即字体的大小。
+
+#### 设置中文字体
+
+首先需要安装想要的中文字体，如何安装字体可以参考`linux.md`中的内容。
+
+如果字体安装成功，在init.el中加入以下内容：
+
+```
+;;设置中文字体
+(dolist (charset '(kana han symbol cjk-misc bopomofo))
+  (set-fontset-font (frame-parameter nil 'font)
+		    charset
+		    (font-spec :family "文泉驿微米黑" :size 15)))
+```
+
+就可以将emacs中的**中文字体**设置成**文泉驿微米黑**
+

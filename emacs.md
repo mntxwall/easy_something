@@ -82,3 +82,15 @@ emacs 24中已经原生支持显示行号了。
 ```
 
 就能在全局模式下启用显示行号。
+
+## 安装emmet扩展
+
+通过MELPA源进行安装，`emmet-mode`
+
+通过`hook`在其它模式下启用`emmet-mode`
+
+```
+;;在html模式下启用emmet-mode
+(add-hook 'html-mode-hook 'emmet-mode)
+```
+

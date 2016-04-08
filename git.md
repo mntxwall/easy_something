@@ -63,7 +63,26 @@ git clone https://github.com/xxx/xxxx
 
 github中的项目就与你本地一致了。
 
-## 结束语
+## 使用ssh来提交repo
+
+使用http的时候每次都要问你用户名和密码，输入多了就觉得麻烦。
+
+github上有教程使用缓存区来保存一段时间的密码，但是这样使用起来也很麻烦。
+
+使用ssh，可以解除快烦恼。
+
+建key的过程见`linux.md`
+
++ 把生成的`public key`加放到github setting->ssh and gpg keys栏目中。
++ 修改项目的remote 地址
+```
+git remote set-url origin git@github.com:username/projectname
+```
+
+接下去你就可以使用ssh来push commit了
+
+
+## 并不是结束语
 
 学会使用git很简单。
 

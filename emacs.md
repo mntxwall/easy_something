@@ -94,3 +94,8 @@ emacs 24中已经原生支持显示行号了。
 (add-hook 'html-mode-hook 'emmet-mode)
 ```
 
+## emacs使用文件树
+
+安装`neotree`可以显示当前文件所在文件夹下的文件树。
+
+通过MELPA源进行安装。

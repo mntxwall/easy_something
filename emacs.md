@@ -99,3 +99,11 @@ emacs 24中已经原生支持显示行号了。
 安装`neotree`可以显示当前文件所在文件夹下的文件树。
 
 通过MELPA源进行安装。
+
+# 已经放弃emacs
+
+html文件中夹杂着javascript, 没办法正常显示javascript的语法样式。
+
+换到sublime text 3下，结果中文无法正常输入。
+
+linux下有好多东西要完善。

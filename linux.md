@@ -40,3 +40,11 @@ IdentityFile ~/.ssh/keyname
 ```
 
 通过上条命令的配置，我们就能使用`~/.ssh/`目录下的`keyname`这个key来登录[github.com](https://github.com)
+
+## sublime text
+
+安装inputHelper来实现中文的输入。
+
+在目录.config/sublime-text-3/Packages中，运行`git clone https://github.com/xgenvn/InputHelper.git`完成安装
+
+默认使用`ctrl+shift+z`打开Input Helper。

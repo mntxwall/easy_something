@@ -106,4 +106,4 @@ html文件中夹杂着javascript, 没办法正常显示javascript的语法样式
 
 换到sublime text 3下，结果中文无法正常输入。
 
-linux下有好多东西要完善。
+linux下桌面有好多东西要完善。

@@ -100,10 +100,14 @@ emacs 24中已经原生支持显示行号了。
 
 通过MELPA源进行安装。
 
-# 已经放弃emacs
+~~# 已经放弃emacs~~
 
-html文件中夹杂着javascript, 没办法正常显示javascript的语法样式。
+~~html文件中夹杂着javascript, 没办法正常显示javascript的语法样式。~~
 
-换到sublime text 3下，结果中文无法正常输入。
+~~换到sublime text 3下，结果中文无法正常输入。~~
 
-linux下桌面有好多东西要完善。
+~~linux下桌面有好多东西要完善。~~
+
+下载了网络上流行的purcell大叔配置的emacs文件，顿时世界美好了许多。
+
+从学习使用先人的emacs配置开始，emacs真的好用，这是我一直不想离开他的原因。

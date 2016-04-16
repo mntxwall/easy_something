@@ -12,6 +12,30 @@ linux下安装字体其实很简单，并不需要root权限。
 
 `Liberation Mono`字体感觉起来不错，设为以后默认使用的字体。
 
+## xfce4 teminal 主题设置
+
+网络上大都是教我们把他们定义好的`terminalrc`放成`~/.config/xfce4/terminal`下。
+
+这种做法是可以的，但是每次要修改termial主题时都要重新放置一次该文件，不太方便。
+
+我们可以根据terminalrc里的内容把它改变成`*.theme`文件。
+
+把该文件放在`/usr/share/xfce4/terminal/colorschemes`中，这样就可以在xfce terminal的首选项里找到该配置，非常方便。
+
+下以`solarized`为例，把`github`上`Base16-xfce4-terminal`clone下来
+
+把文件加上以下内容
+
+```
+[Scheme]
+Name=WeiSolarized (dark)
+```
+
+去掉原来`terminalrc`里面的`[configuration]`把文件另存为`*.theme`放入先前说的目录中，修改就完成了。
+
+把修改后的`*.theme`我也放在目录底下。
+
+
 ## 生成ssh key
 
 在没有key认证前，要在小本子上记录好多服务器的密码。

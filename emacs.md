@@ -111,3 +111,12 @@ emacs 24中已经原生支持显示行号了。
 下载了网络上流行的purcell大叔配置的emacs文件，顿时世界美好了许多。
 
 从学习使用先人的emacs配置开始，emacs真的好用，这是我一直不想离开他的原因。
+
+## purcell的emacs配置文件
+
+按照之前的配置方法，为emacs设置字体。
+
+把配置文件写入`~/.emacs.d／list／init-fonts.el`中，其实写在其它目录中也是没问题，写在该目录中是为了方便管理。
+
+大叔默认的配色是solarized light，把它配置成黑色用命令`M-x color-theme-sanitynic-solarized-dark`。
+

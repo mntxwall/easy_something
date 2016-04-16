@@ -14,7 +14,7 @@ linux下安装字体其实很简单，并不需要root权限。
 
 ## xfce4 teminal 主题设置
 
-网络上大都是教我们把他们定义好的`terminalrc`放成`~/.config/xfce4/terminal`下。
+网络上大都是教我们把他们定义好的`terminalrc`放到`~/.config/xfce4/terminal`下。
 
 这种做法是可以的，但是每次要修改termial主题时都要重新放置一次该文件，不太方便。
 
@@ -33,7 +33,7 @@ Name=WeiSolarized (dark)
 
 去掉原来`terminalrc`里面的`[configuration]`把文件另存为`*.theme`放入先前说的目录中，修改就完成了。
 
-把修改后的`*.theme`我也放在目录底下。
+把修改后的`*.theme`放在目录底下。
 
 
 ## 生成ssh key

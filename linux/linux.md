@@ -90,3 +90,17 @@ IdentityFile ~/.ssh/keyname
 在目录.config/sublime-text-3/Packages中，运行`git clone https://github.com/xgenvn/InputHelper.git`完成安装
 
 默认使用`ctrl+shift+z`打开Input Helper。
+
+
+## debian 中文字体
+
+安装以下中文字体
+
+```
+sudo apt-get install fonts-arphic-bkai00mp fonts-arphic-bsmi00lp fonts-arphic-gbsn00lp ttf-arphic-bkai00mp ttf-arphic-bsmi00lp ttf-arphic-gbsn00lp
+sudo apt-get install fonts-droid ttf-droid 
+sudo apt-get install ttf-wqy-zenhei ttf-wqy-microhei xfonts-wqy
+sudo apt-get install fonts-arphic-ukai ttf-arphic-ukai fonts-arphic-uming ttf-arphic-uming
+```
+
+再配上infinality，可以有很好的显示效果!!

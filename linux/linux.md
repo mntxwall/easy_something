@@ -104,3 +104,9 @@ sudo apt-get install fonts-arphic-ukai ttf-arphic-ukai fonts-arphic-uming ttf-ar
 ```
 
 再配上infinality，可以有很好的显示效果!!
+
+## Debian8 ati Radeon HD 2000/3000/4000 series 驱动
+
+使用 `xserver-xorg-video-radeon` 可以解决该问题！
+
+如果不行的话，再安装 `firmware-linux-nonfree`？（设试过，可以尝试一下！）

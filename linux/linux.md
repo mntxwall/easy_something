@@ -110,3 +110,10 @@ sudo apt-get install fonts-arphic-ukai ttf-arphic-ukai fonts-arphic-uming ttf-ar
 使用 `xserver-xorg-video-radeon` 可以解决该问题！
 
 如果不行的话，再安装 `firmware-linux-nonfree`？（设试过，可以尝试一下！）
+
+
+## Debian8 Gnome3 英文环境下的中文输入法
+
+使用 `dpkg-reconfigure locales` 添加中文环境 `zh_CN GB2312 zh_CN.GB18030 GB18030 zh_CN.GBK GBK zh_CN.UTF-8 UTF-8`
+
+然后安装ibus输入法就可以在Gnome3的设置里面出现ibus输入法了!

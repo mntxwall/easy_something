@@ -117,3 +117,49 @@ sudo apt-get install fonts-arphic-ukai ttf-arphic-ukai fonts-arphic-uming ttf-ar
 使用 `dpkg-reconfigure locales` 添加中文环境 `zh_CN GB2312 zh_CN.GB18030 GB18030 zh_CN.GBK GBK zh_CN.UTF-8 UTF-8`
 
 然后安装ibus输入法就可以在Gnome3的设置里面出现ibus输入法了!
+
+## Font rendering in Fedora 25
+
+For the best font rendering experience follow the next steps:
+
+1. Add RPMFusion Repos
+
+2. Install freetype-freeworld package
+
+3. Create file /etc/fonts/local.conf
+
+4. Put these lines in the created file: 
+
+```
+<?xml version='1.0'?>
+<!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+<fontconfig>
+<match target="font">
+    <edit name="antialias" mode="assign">
+        <bool>true</bool>
+    </edit>
+    <edit name="autohint" mode="assign">
+        <bool>false</bool>
+    </edit>
+    <edit name="hinting" mode="assign">
+        <bool>true</bool>
+    </edit>
+    <edit name="hintstyle" mode="assign">
+        <const>hintslight</const>
+    </edit>
+    <edit name="lcdfilter" mode="assign">
+        <const>lcddefault</const>
+    </edit>
+    <edit name="rgba" mode="assign">
+        <const>rgb</const>
+    </edit>
+    <edit name="embeddedbitmap" mode="assign">
+        <bool>false</bool>
+    </edit>
+</match>
+</fontconfig>
+
+```
+
+5. Logout or reboot
+

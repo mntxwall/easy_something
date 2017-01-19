@@ -51,4 +51,7 @@ Linux 添加用户时会建立一个与用户同名的组，这个组叫做user 
 
 `-d`后目录指定该用户的主目录，`/sbin/nologin`说明这个用户不能登录系统。
 
+## firewall开放ftp端口
 
+通过service来实现
+`firewalld-cmd --zone=yourzone --add-service=ftp --permanent`

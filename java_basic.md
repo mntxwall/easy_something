@@ -28,3 +28,8 @@ finally中的`return continue break`或者是抛出异常都会导致之前控�
 
 JAVA中有try-with-resource的说法，在使用io资源时，带上try JVM会自动处理资源释放。
 
+## 数组
+
+数组的index必须是int类型，或者是可以扩展为int类型的其它类型：如`byte short char`
+
+如果使用long类型来当数组的index，即使在int范围之类，编译的时候也会报错。

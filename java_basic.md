@@ -33,3 +33,10 @@ JAVA中有try-with-resource的说法，在使用io资源时，带上try JVM会�
 数组的index必须是int类型，或者是可以扩展为int类型的其它类型：如`byte short char`
 
 如果使用long类型来当数组的index，即使在int范围之类，编译的时候也会报错。
+
+## Primitive type and Reference type 
+
+Primitive tye的值是在内存中的，赋值或是函数值传递时会复制值对应的内存空间。所以修改内容不会对新的内容进行修改。
+
+Reference type的值是在heap中，赋值和函数值传递是复制reference而不是值本身，所以修改的内容会体现在原来的值上。
+

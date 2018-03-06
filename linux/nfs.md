@@ -56,3 +56,10 @@ LOCKD_UDPPORT=52548
 ```
 
 6. 在防火墙中开放这些端口，具体操作参考`firewall.md`
+
+## 客户端如何连接nfs服务器端
+
+1. 客户端同样安装`rpcbind`和`nfs-utils`
+
+2. 使用命令`mount.nfs serverip:/source/dir /dest/dir`
+ 

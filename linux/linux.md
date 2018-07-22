@@ -172,3 +172,15 @@ For the best font rendering experience follow the next steps:
 使用`grub2-mkconfig -o /boot/grub2/grub.cfg`的方式来生成新的引导文件.
 
 虽然最后效果也是生成新的`/boot/grub2/grub.cfg`但感觉这样才是正确的使用方法.
+
+## apt 设置代理
+
+在 `/etc/apt/apt.conf.d/` 中创建配置文件
+
+加入代理配置 `Acquire::http::Proxy "http://username:password@proxy.server:port/";`
+
+加入代理配置后使用apt 都会默认使用该代理。
+
+如果想去掉代理在apt命令中加入 `atp -o Acquire::http::proxy=false`
+
+

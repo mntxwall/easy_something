@@ -1,0 +1,1 @@
+1. 在上传文件时需要在route文件中配置表单action需要的路径，否则会报不是ResetController的错误。

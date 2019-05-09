@@ -183,7 +183,7 @@ For the best font rendering experience follow the next steps:
 
 如果想去掉代理在apt命令中加入 `atp -o Acquire::http::proxy=false`
 
-##创建LVM
+## 创建LVM
 
 `pvcreate /dev/sdb1`
 

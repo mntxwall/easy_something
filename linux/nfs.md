@@ -63,7 +63,7 @@ LOCKD_UDPPORT=52548
 
 2. 使用命令`mount.nfs serverip:/source/dir /dest/dir`
 
-7. 在使用中发现新建的文件是nobody如何解决
+## 在使用中发现新建的文件是nobody如何解决
 
 ```
 编辑/etc/idmapd.conf文件

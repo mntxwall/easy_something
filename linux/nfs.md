@@ -62,4 +62,12 @@ LOCKD_UDPPORT=52548
 1. 客户端同样安装`rpcbind`和`nfs-utils`
 
 2. 使用命令`mount.nfs serverip:/source/dir /dest/dir`
- 
+
+7. 在使用中发现新建的文件是nobody如何解决
+
+```
+编辑/etc/idmapd.conf文件
+修改[Mapping]中的映射
+将Nobody-User和Nobody-Group改成所要的用户
+
+```

@@ -25,6 +25,10 @@ write_enable=YES
 #创建文件的umask，设置为002是为了让同组用户可以修改，创建文件为775权限
 local_umask=002
 
+#只允许用户访问自己的目录
+chroot_local_user=YES
+allow_writeable_chroot=YES
+
 ```
 
 `systemctl start vsftpd.service`运行vsftpd服务
